@@ -1,0 +1,2 @@
+# alticci
+Sequential calculation
