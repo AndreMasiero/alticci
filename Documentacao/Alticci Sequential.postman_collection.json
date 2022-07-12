@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "fed64444-45d7-49e3-857f-262611f21f3c",
+		"name": "Alticci Sequential",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1269558"
+	},
+	"item": [
+		{
+			"name": "Calculate Sequential",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cartoes/6549873025634501",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cartoes",
+						"6549873025634501"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

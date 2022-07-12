@@ -1,0 +1,42 @@
+<div class="background">
+  <mat-card class="card">
+    <mat-form-field appearance="legacy" style=" width: 10%;">
+      <mat-label>Size</mat-label>
+      <input matInput placeholder="Enter the amount to be calculated" [(ngModel)]="number">
+    </mat-form-field>
+    <div *ngIf="!calculating">
+      <section>
+        <div class="button-row">
+          <button *ngIf="!calculating" mat-raised-button color="primary" (click)="calculate()">Calculate</button>
+        </div>
+      </section>
+    </div>
+    <div *ngIf="calculating">
+      <h3>
+        <img alt="File:Loading.gif" src="/assets/Loading.gif" decoding="async" width="30" height="30"
+             data-file-width="30" data-file-height="30">
+        Wait a moment please...
+      </h3>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="ui-100">
+      <mat-table mat-table [dataSource]="sequentialDto" class="mat-elevation-z8">
+        <!-- Index Column -->
+        <ng-container matColumnDef="index">
+          <th [width]="600" mat-header-cell *matHeaderCellDef>#</th>
+          <td mat-cell *matCellDef="let element"> {{element.index}} </td>
+        </ng-container>
+
+        <!-- Sum Column -->
+        <ng-container matColumnDef="sum">
+          <th [width]="600" mat-header-cell *matHeaderCellDef> Sum</th>
+          <td mat-cell *matCellDef="let element"> {{element.sum}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </mat-table>
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,14 @@
+Comandos Anticci
+
+
+//Backend
+docker container run -it --rm -p 8080:8080 alticci-back:1.0.0-SNAPSHOT
+
+
+-- Front
+
+// Gerar imagem Alticci front
+docker build -t alticci-front .
+
+// Subir container Alticci front
+docker run --name alticci-container -d -p 4200:80 alticci-front
