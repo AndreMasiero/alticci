@@ -50,12 +50,18 @@ http://localhost:8080/swagger-ui.html
 
 - Documentação Swagger
 <p align="center">
-  <img src="./Documentacao/prints_tela/print_1.jpg">
+  <img src="./Documentacao/prints_tela/print_2.jpg">
 </p>
 <br>
 
 - Tela inicial (iniciando com 20 números)
 <p align="center">
-  <img src="./Documentacao/prints_tela/print_1.jpg">
+  <img src="./Documentacao/prints_tela/print_3.jpg">
+</p>
+<br>
+
+- Calculo com quantidade de números altas(informa o usuário do tempo de espera)
+<p align="center">
+  <img src="./Documentacao/prints_tela/print_4.jpg">
 </p>
 <br>
